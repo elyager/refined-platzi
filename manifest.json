@@ -1,21 +1,15 @@
 {
-  "name": "Platzo Enhacement",
+  "name": "Refined Platzi",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Muestra la duración total del curso",
-  "homepage_url": "https://github.com/Elyager/platzo-enhacement",
+  "description": "Un platzi refinado 🎩",
+  "homepage_url": "https://github.com/Elyager/refined-platzi",
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
     "default_title": "Mostrar/Ocultar Tiempo"
   },
-  "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "tabs"
-  ]
+  "permissions": ["https://*/*", "http://*/*", "tabs"]
 }
