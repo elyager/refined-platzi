@@ -4,12 +4,14 @@
   "manifest_version": 2,
   "description": "Un platzi refinado 🎩",
   "homepage_url": "https://github.com/Elyager/refined-platzi",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "browser_action": {
     "default_title": "Mostrar/Ocultar Tiempo"
   },
-  "permissions": ["https://*/*", "http://*/*", "tabs"]
+  "permissions": ["*://platzi.com/clases/*/", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://platzi.com/clases/*/"],
+      "js": ["inject.js"]
+    }
+  ]
 }

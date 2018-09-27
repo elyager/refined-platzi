@@ -1,5 +1,4 @@
-(function(){
-
+;(function() {
   let $messageElement = document.querySelector('#course-duration')
   let $topBanner = document.querySelector('.CourseBanner')
 
@@ -11,7 +10,7 @@
   let $contentDuration = document.querySelectorAll('.MaterialContent-duration')
   let totalMinutes = 0
 
-  $contentDuration.forEach( (item) => {
+  $contentDuration.forEach(item => {
     let minutes = parseInt(item.innerText, 10) || 0
     totalMinutes += minutes
   })
@@ -26,5 +25,4 @@
   spanElement.textContent = message
 
   $topBanner.appendChild(spanElement)
-
 })()
