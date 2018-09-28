@@ -7,11 +7,15 @@
   "browser_action": {
     "default_title": "Mostrar/Ocultar Tiempo"
   },
-  "permissions": ["*://platzi.com/clases/*/", "tabs"],
+  "permissions": ["*://platzi.com/", "tabs"],
   "content_scripts": [
     {
       "matches": ["*://platzi.com/clases/*/"],
-      "js": ["inject.js"]
+      "js": ["courseDuration.js"]
+    },
+    {
+      "matches": ["*://platzi.com/clases/"],
+      "js": ["coursesList.js"]
     }
   ]
 }
